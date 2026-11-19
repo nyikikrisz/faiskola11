@@ -1,0 +1,14 @@
+.card{
+    background-color: aqua;
+    width: 50%;
+}
+.grid-layout{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+                        "card" "card" "card";
+    gap: 50px;
+    position: relative;
+
+
+}
