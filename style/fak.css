@@ -1,14 +1,27 @@
-.card{
-    background-color: aqua;
-    width: 50%;
+
+body{
+    background: linear-gradient(90deg, oklch(35.04% 0.0902 51.89) 0.000% 14.286%, oklch(42.91% 0.1047 56.25) 14.286% 28.571%, oklch(57.48% 0.1157 63.66) 28.571% 42.857%, oklch(65.75% 0.1185 68.94) 42.857% 57.143%, oklch(61.02% 0.1199 65.77) 57.143% 71.429%, oklch(46.06% 0.0978 56.26) 71.429% 85.714%, oklch(31.10% 0.0703 47.80) 85.714% 100.000%);
 }
+
 .grid-layout{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-areas:
-                        "card" "card" "card";
+                        "header header header"
+                        "card1 card2 card3";
     gap: 50px;
-    position: relative;
-
-
+}
+header{
+    grid-area: header;
+    text-align: center;
+    background: rgb(144, 169, 85);
+    height: 100px;
+}
+card{
+    grid-area: card;
+}
+.card{
+    background-color: rgb(79, 119, 45);
+    text-align: center;
+    height: 200px;
 }
