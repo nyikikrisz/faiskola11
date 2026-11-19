@@ -10,15 +10,41 @@
 
 }
 
+body{
+    background: linear-gradient(90deg, oklch(35.04% 0.0902 51.89) 0.000% 14.286%, oklch(42.91% 0.1047 56.25) 14.286% 28.571%, oklch(57.48% 0.1157 63.66) 28.571% 42.857%, oklch(65.75% 0.1185 68.94) 42.857% 57.143%, oklch(61.02% 0.1199 65.77) 57.143% 71.429%, oklch(46.06% 0.0978 56.26) 71.429% 85.714%, oklch(31.10% 0.0703 47.80) 85.714% 100.000%);
+    margin: auto;
+}
 .hero {
+    
     position: relative;
     height: 500px;
     width: 100%;
     overflow: hidden;
+    margin: 0px;
     background: linear-gradient(75deg in oklch, oklch(41.73% 0.1060 125.87) 0.0%, oklch(44.49% 0.1135 126.15) 11.1%, oklch(48.43% 0.1241 126.54) 22.2%, oklch(52.36% 0.1349 126.93) 33.3%, oklch(55.95% 0.1449 127.32) 44.4%, oklch(59.54% 0.1549 127.70) 55.6%, oklch(62.99% 0.1640 127.97) 66.7%, oklch(66.58% 0.1742 128.05) 77.8%, oklch(70.04% 0.1832 128.02) 88.9%, oklch(72.44% 0.1894 127.98) 100.0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
+.hero-box{
+    align-self: center;
+    text-align: center;
+    background-color: white;
+    width: 50vh;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 20px 20px;;
+}
+.hero-box h1{
+    font-family: "Dynalight", cursive;
+    font-size: 110px;
+    margin: 5px;
+}
+.hero-box h4{
+    font-family: "Dynalight", cursive;
+    font-size: 70px;
+    margin: 5px;
+}
 .main{
     grid-area: main;
 
@@ -27,4 +53,23 @@
 .dec{
     grid-area: desc;
 
+}
+
+.hero-box button {
+background-color: #FFBF00;
+border: 2px;
+padding: 30px 70px;
+margin: 10px;
+border-radius: 10px;
+box-shadow: 3px 3px;
+
+}
+.hero-box button:hover{
+    filter: brightness(85%);
+    box-shadow: 3px 3px;
+
+}
+.hero-box button:active{
+    filter: brightness(85%);
+    box-shadow: 0px 0px;
 }

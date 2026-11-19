@@ -1,6 +1,10 @@
 
 body{
     background: linear-gradient(90deg, oklch(35.04% 0.0902 51.89) 0.000% 14.286%, oklch(42.91% 0.1047 56.25) 14.286% 28.571%, oklch(57.48% 0.1157 63.66) 28.571% 42.857%, oklch(65.75% 0.1185 68.94) 42.857% 57.143%, oklch(61.02% 0.1199 65.77) 57.143% 71.429%, oklch(46.06% 0.0978 56.26) 71.429% 85.714%, oklch(31.10% 0.0703 47.80) 85.714% 100.000%);
+    margin: auto;
+}
+body .card{
+    margin: 10px;
 }
 
 .grid-layout{
@@ -9,19 +13,47 @@ body{
     grid-template-areas:
                         "header header header"
                         "card1 card2 card3";
-    gap: 50px;
+    gap: 20px;
 }
 header{
     grid-area: header;
     text-align: center;
-    background: rgb(144, 169, 85);
-    height: 100px;
 }
 card{
     grid-area: card;
+
 }
 .card{
-    background-color: rgb(79, 119, 45);
     text-align: center;
     height: 200px;
+    border-radius: 50px;padding: 5%;
+    background: linear-gradient(315deg, oklch(24.41% 0.0799 149.06) 0.000% 20.000%, oklch(31.27% 0.1116 142.92) 20.000% 40.000%, oklch(38.48% 0.1318 136.38) 40.000% 60.000%, oklch(46.21% 0.1438 129.84) 60.000% 80.000%, oklch(54.33% 0.1557 123.70) 80.000% 100.000%);
+
+}
+.card:hover{
+    background: linear-gradient(315deg, oklch(24.41% 0.0499 89.06) 0.000% 20.000%, oklch(31.28% 0.0643 83.02) 20.000% 40.000%, oklch(38.49% 0.0807 76.53) 40.000% 60.000%, oklch(46.21% 0.1001 70.02) 60.000% 80.000%, oklch(54.33% 0.1230 63.90) 80.000% 100.000%);
+    
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    background: linear-gradient(75deg in oklch, oklch(41.73% 0.1060 125.87) 0.0%, oklch(44.49% 0.1135 126.15) 11.1%, oklch(48.43% 0.1241 126.54) 22.2%, oklch(52.36% 0.1349 126.93) 33.3%, oklch(55.95% 0.1449 127.32) 44.4%, oklch(59.54% 0.1549 127.70) 55.6%, oklch(62.99% 0.1640 127.97) 66.7%, oklch(66.58% 0.1742 128.05) 77.8%, oklch(70.04% 0.1832 128.02) 88.9%, oklch(72.44% 0.1894 127.98) 100.0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-box{
+    align-self: center;
+    text-align: center;
+    background-color: white;
+    width: 20vh;
+    height: auto;
+}
+.hero-box h1{
+    font-family: "Dynalight", cursive;
+    font-size: 70px;
 }
