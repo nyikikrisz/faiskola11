@@ -1,0 +1,30 @@
+.grid-layout{
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-areas:"hero"
+                        "main"
+                        "desc";
+    justify-items: center;
+
+    
+
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(75deg in oklch, oklch(41.73% 0.1060 125.87) 0.0%, oklch(44.49% 0.1135 126.15) 11.1%, oklch(48.43% 0.1241 126.54) 22.2%, oklch(52.36% 0.1349 126.93) 33.3%, oklch(55.95% 0.1449 127.32) 44.4%, oklch(59.54% 0.1549 127.70) 55.6%, oklch(62.99% 0.1640 127.97) 66.7%, oklch(66.58% 0.1742 128.05) 77.8%, oklch(70.04% 0.1832 128.02) 88.9%, oklch(72.44% 0.1894 127.98) 100.0%);
+}
+
+
+.main{
+    grid-area: main;
+
+
+}
+.dec{
+    grid-area: desc;
+
+}
