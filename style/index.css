@@ -124,6 +124,9 @@ body {
     flex-direction: column;
 }
 
+.desc-grid h2 {
+    font-size: 3rem;
+}
 
 .desc-card1 {
     grid-area: desc-card1;
