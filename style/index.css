@@ -22,7 +22,16 @@ body {
     height: 80vh;
     width: auto;
     margin: 0px;
-    background: linear-gradient(75deg in oklch, oklch(41.73% 0.1060 125.87) 0.0%, oklch(44.49% 0.1135 126.15) 11.1%, oklch(48.43% 0.1241 126.54) 22.2%, oklch(52.36% 0.1349 126.93) 33.3%, oklch(55.95% 0.1449 127.32) 44.4%, oklch(59.54% 0.1549 127.70) 55.6%, oklch(62.99% 0.1640 127.97) 66.7%, oklch(66.58% 0.1742 128.05) 77.8%, oklch(70.04% 0.1832 128.02) 88.9%, oklch(72.44% 0.1894 127.98) 100.0%);
+    background: linear-gradient(
+        45deg in oklch,
+        oklch(41.73% 0.1060 125.87) 0.000% 14.286%,
+        oklch(44.49% 0.1135 126.15) 14.286% 28.571%,
+        oklch(48.43% 0.1241 126.54) 28.571% 42.857%,
+        oklch(52.36% 0.1349 126.93) 42.857% 57.143%,
+        oklch(55.95% 0.1449 127.32) 57.143% 71.429%,
+        oklch(62.99% 0.1640 127.97) 71.429% 85.714%,
+        oklch(72.44% 0.1894 127.98) 85.714% 100.000%
+    );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +99,26 @@ body {
     grid-template-areas:
         "desc-card1 desc-card2"
         "desc-card3 desc-card4";
+        gap: 1rem;
+}
+
+
+
+.desc-grid > *{
+    background: linear-gradient(
+        315deg,
+        oklch(24.41% 0.0799 149.06) 0% 25%,
+        oklch(31.27% 0.1116 142.92) 25% 50%,
+        oklch(38.48% 0.1318 136.38) 50% 75%,
+        oklch(46.21% 0.1438 129.84) 75% 100%
+    );
+    color: oklch(90% 0.015 85);
+    border-radius: 15px;
+    height: 15vh;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 
 .desc-card1 {
