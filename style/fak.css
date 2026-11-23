@@ -3,8 +3,8 @@ body{
     background: linear-gradient(90deg, oklch(35.04% 0.0902 51.89) 0.000% 14.286%, oklch(42.91% 0.1047 56.25) 14.286% 28.571%, oklch(57.48% 0.1157 63.66) 28.571% 42.857%, oklch(65.75% 0.1185 68.94) 42.857% 57.143%, oklch(61.02% 0.1199 65.77) 57.143% 71.429%, oklch(46.06% 0.0978 56.26) 71.429% 85.714%, oklch(31.10% 0.0703 47.80) 85.714% 100.000%);
     margin: auto;
 }
-body .card{
-    margin: 10px;
+body .card, body .cardorokszoldek{
+    margin: 20px;
 }
 
 .grid-layout{
@@ -20,8 +20,8 @@ header{
     text-align: center;
 }
 .card {
-    position: relative; /* Szükséges a ::before pozicionálásához */
-    overflow: hidden;   /* Hogy a lekerekítésen (border-radius) ne lógjon túl */
+    position: relative; 
+    overflow: hidden;  
     z-index: 1;
     text-align: center;
     height: 200px;
@@ -46,6 +46,40 @@ header{
     transition: opacity 0.5s;
 }
 .card:hover {
+    transform: scale(1.03);
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: 10px 10px;
+}
+
+
+
+.cardorokszoldek {
+    position: relative; 
+    overflow: hidden;   
+    z-index: 1;
+    text-align: center;
+    height: 200px;
+    border-radius: 50px;
+    background: linear-gradient(315deg, oklch(23.23% 0.0744 264.38) 0% 20%, oklch(30.59% 0.0970 264.44) 20% 40%, oklch(39.76% 0.1226 264.38) 40% 60%, oklch(48.08% 0.1381 263.85) 60% 80%, oklch(54.33% 0.1474 263.32) 80% 100%);
+    padding: 5%;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.cardorokszoldek::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1; 
+    background: linear-gradient(315deg, oklch(45.67% 0.0000 89.88) 0% 20%, oklch(56.69% 0.0000 89.88) 20% 40%, oklch(68.90% 0.0000 89.88) 40% 60%, oklch(80.71% 0.0000 89.88) 60% 80%, oklch(91.73% 0.0000 89.88) 80% 100%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.cardorokszoldek:hover::before {
+    opacity: 60%;
+    transition: opacity 0.5s;
+}
+.cardorokszoldek:hover {
     transform: scale(1.03);
     transition: transform 0.5s, box-shadow 0.5s;
     box-shadow: 10px 10px;
