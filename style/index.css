@@ -22,7 +22,8 @@ body {
     grid-template-areas: 
         "hero"
         "desc"
-        "main"
+        "recommends"
+        "delivery"
         "delivery";
 
 
@@ -133,8 +134,8 @@ body {
 
 .desc-grid > * {
     container-type: inline-size;
-    /* background: linear-gradient(315deg, oklch(24.41% 0.0799 149.06), oklch(46.21% 0.1438 129.84)); */
-background: linear-gradient(90deg, oklch(84.07% 0.1048 72.52) 0.000% 20.000%, oklch(69.60% 0.1672 52.61) 20.000% 40.000%, oklch(59.48% 0.1687 45.48) 40.000% 60.000%, oklch(53.51% 0.1625 39.51) 60.000% 80.000%, oklch(40.00% 0.1099 37.86) 80.000% 100.000%);
+    background: linear-gradient(315deg, oklch(24.41% 0.0799 149.06), oklch(46.21% 0.1438 129.84));
+/* background: linear-gradient(90deg, oklch(84.07% 0.1048 72.52) 0.000% 20.000%, oklch(69.60% 0.1672 52.61) 20.000% 40.000%, oklch(59.48% 0.1687 45.48) 40.000% 60.000%, oklch(53.51% 0.1625 39.51) 60.000% 80.000%, oklch(40.00% 0.1099 37.86) 80.000% 100.000%); */
     color: oklch(90% 0.015 85);
     border-radius: 15px;
     width: 100%;
@@ -149,25 +150,48 @@ background: linear-gradient(90deg, oklch(84.07% 0.1048 72.52) 0.000% 20.000%, ok
     
 }
 
+.desc vine1{
+    
+}
+
 .desc-card1 {
     grid-area: desc-card1;
-
+    z-index: 2;
 }
 
 .desc-card2 {
     grid-area: desc-card2;
-
+    z-index: 2;
 }
 
 .desc-card3 {
     grid-area: desc-card3;
-
+    z-index: 2;
 }
 
 .desc-card4 {
     grid-area: desc-card4;
-
+    z-index: 2;
 }
+
+.content{
+    display: flex;
+    gap: 10px;
+    border-radius: 15px;
+    width: 100%;
+    align-items: center;
+}
+.content > *{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: blue;
+    text-align: center;
+}
+
+
+
 
 /* .delivery {
     grid-area: delivery;
