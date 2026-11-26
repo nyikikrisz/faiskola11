@@ -3,20 +3,23 @@
 }
 
 
-html, body {
+body {
     height: 100%;
-    margin: 0;
+
 }
 
 
 body {
     background: linear-gradient(90deg, oklch(35.04% 0.0902 51.89) 0.000% 14.286%, oklch(42.91% 0.1047 56.25) 14.286% 28.571%, oklch(57.48% 0.1157 63.66) 28.571% 42.857%, oklch(65.75% 0.1185 68.94) 42.857% 57.143%, oklch(61.02% 0.1199 65.77) 57.143% 71.429%, oklch(46.06% 0.0978 56.26) 71.429% 85.714%, oklch(31.10% 0.0703 47.80) 85.714% 100.000%);
     margin: auto;
+    font-family: "Lora", Georgia, serif;
+    container-type: inline-size;
 }
 
 
 
 .grid-layout {
+    font-size: clamp(1rem, 1.2cqw, 1.25rem);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -95,13 +98,13 @@ body {
     font-family: Arial;
     display: inline-block;
     background-color: #FFBF00;
-    border: 2px;
     padding: 5.2cqw 13cqw;
     border-radius: 10px;
     box-shadow: 7px 7px;
     font-size: 4cqw;
     text-decoration: none;
     color: black;
+    border: 3px, solid black;
 
 }
 
@@ -124,7 +127,7 @@ body {
     grid-template-areas:
         "desc-card1 desc-card2"
         "desc-card3 desc-card4";
-    gap: 1rem 3rem;
+    gap: 3rem 3rem;
     width: 90%;
     margin: auto;
 }
@@ -140,6 +143,27 @@ body {
     border-radius: 15px;
     width: 100%;
     padding: 20px;
+    box-shadow: 6px 6px black;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.desc-grid > *:hover{
+    transform: scale(1.03);
+    box-shadow: 10px 10px black;
+}
+
+/* Headings share the hero's display font (Dynalight) */
+.desc > h1,
+.recommends h2,
+.desc-grid h2,
+.content h3 {
+    font-family: "Dynalight", cursive;
+}
+
+/* Section titles: "Miért mink?" and "Ajánlataink" */
+.desc > h1,
+.recommends h2 {
+    font-size: clamp(2.5rem, 5cqw, 4.5rem);
 }
 
 .desc-grid h2 {
@@ -147,12 +171,10 @@ body {
 }
 
 .desc-grid p {
-    
+    font-size: clamp(1rem, 2.4cqw, 1.5rem);
 }
 
-.desc vine1{
-    
-}
+
 
 .desc-card1 {
     grid-area: desc-card1;
@@ -174,20 +196,28 @@ body {
     z-index: 2;
 }
 
-.content{
+.content {
     display: flex;
     gap: 10px;
     border-radius: 15px;
-    width: 100%;
+    width: 90%;
     align-items: center;
+    margin: auto;
 }
-.content > *{
+
+.content > * {
     display: flex;
+    justify-content: center; 
+    align-items: center;     
     gap: 10px;
     width: 100%;
     border-radius: 15px;
     background-color: blue;
+}
+
+.content h3 {
     text-align: center;
+    font-size: clamp(1.5rem, 2.5cqw, 2.5rem);
 }
 
 
