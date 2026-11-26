@@ -9,6 +9,21 @@ body .card, body .cardorokszoldek, body .cardgyumolcs{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p{
+    background: #00000073;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    transition: 0.5s;
+}
+p:hover{
+    scale: (1.05);
+    box-shadow: 5px 5px black;
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+}
+
 
 .grid-layout{
     display:grid;
@@ -59,8 +74,7 @@ img {
 .card:hover {
     transform: scale(1.03);
     transition: transform 0.5s, box-shadow 0.5s, color 0.5s;
-    box-shadow: 10px 10px;
-    color: rgb(0, 0, 0);
+    box-shadow: 10px 10px black;
 }
 
 
@@ -96,8 +110,7 @@ img {
 .cardorokszoldek:hover {
     transform: scale(1.03);
     transition: transform 0.5s, box-shadow 0.5s,color 0.5s;
-    box-shadow: 10px 10px;
-    color: rgb(0, 0, 0);
+    box-shadow: 10px 10px black;
 }
 
 
@@ -132,8 +145,7 @@ img {
 .cardgyumolcs:hover {
     transform: scale(1.03);
     transition: transform 0.5s, box-shadow 0.5s, color 0.5s;
-    box-shadow: 10px 10px;
-    color: rgb(0, 0, 0);
+    box-shadow: 10px 10px black;
 }
 
 .hero {
