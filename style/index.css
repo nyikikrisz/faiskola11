@@ -104,14 +104,15 @@ body {
     font-size: 4cqw;
     text-decoration: none;
     color: black;
-    border: 3px, solid black;
+    border: 3px solid black;
+    transition: filter 0.25s, box-shadow 0.2s;
 
 }
 
 .hero-button:hover {
     filter: brightness(85%);
-    transition: filter 0.2s;
-    transition: box-shadow 0.2s;
+
+
 
 }
 
@@ -198,7 +199,7 @@ body {
 
 .content {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     border-radius: 15px;
     width: 90%;
     align-items: center;
@@ -207,12 +208,13 @@ body {
 
 .content > * {
     display: flex;
+    flex-direction: column; 
     justify-content: center; 
     align-items: center;     
     gap: 10px;
     width: 100%;
     border-radius: 15px;
-    background-color: blue;
+    background: linear-gradient(315deg, #001b19 0% 20%, #00312e 20% 40%, #004f4a 40% 60%, #006c65 60% 80%, #168279 80% 100%);
 }
 
 .content h3 {
@@ -220,6 +222,13 @@ body {
     font-size: clamp(1.5rem, 2.5cqw, 2.5rem);
 }
 
+.content img{
+        width: 150px;
+}
+.content-card3{
+    background: linear-gradient(315deg, #300b0f 0% 20%, #4f191b 20% 40%, #4b1013 40% 60%, #6c3230 60% 80%, #826561 80% 100%);
+
+}
 
 
 
