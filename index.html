@@ -12,8 +12,22 @@
 </head>
 
 <body>
+<header>
+    <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="#desc">Miért mi?</a>
+        <a href="#recommends">Ajánlatok</a>
+        <a href="#delivery">Szállítás</a>
+        <a href=""></a>
+    </nav>
+</header>
     <div class="grid-layout">
-        <div class="hero">
+<div class="hero">
+    <svg class="hero-wave-top" viewBox="0 0 1440 150"
+         preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#87CEEB"
+              d="M0,0 L0,70 C250,150 450,0 720,70 C1000,140 1200,0 1440,70 L1440,0 Z"/>
+    </svg>
             <div class="hero-box">
                 <div>
                 <h1>FAS'</h1>
@@ -25,10 +39,40 @@
                 </div>
             </div>
             </div>
+                <svg class="hero-wave" viewBox="0 0 1440 150"
+         preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+    <linearGradient id="page-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"        stop-color="oklch(35.04% 0.0902 51.89)"/>
+        <stop offset="14.286%"   stop-color="oklch(35.04% 0.0902 51.89)"/>
+
+        <stop offset="14.286%"   stop-color="oklch(42.91% 0.1047 56.25)"/>
+        <stop offset="28.571%"   stop-color="oklch(42.91% 0.1047 56.25)"/>
+
+        <stop offset="28.571%"   stop-color="oklch(57.48% 0.1157 63.66)"/>
+        <stop offset="42.857%"   stop-color="oklch(57.48% 0.1157 63.66)"/>
+
+        <stop offset="42.857%"   stop-color="oklch(65.75% 0.1185 68.94)"/>
+        <stop offset="57.143%"   stop-color="oklch(65.75% 0.1185 68.94)"/>
+
+        <stop offset="57.143%"   stop-color="oklch(61.02% 0.1199 65.77)"/>
+        <stop offset="71.429%"   stop-color="oklch(61.02% 0.1199 65.77)"/>
+
+        <stop offset="71.429%"   stop-color="oklch(46.06% 0.0978 56.26)"/>
+        <stop offset="85.714%"   stop-color="oklch(46.06% 0.0978 56.26)"/>
+
+        <stop offset="85.714%"   stop-color="oklch(31.10% 0.0703 47.80)"/>
+        <stop offset="100%"      stop-color="oklch(31.10% 0.0703 47.80)"/>
+    </linearGradient>
+</defs>
+
+        <path fill="url(#page-gradient)"
+              d="M0,70 C250,150 450,0 720,70 C1000,140 1200,0 1440,70 L1440,150 L0,150 Z"/>
+    </svg>
         </div>
 
-        <div class="desc">
-            <h1>Miért mink?</h1>
+        <div class="desc" id="desc">
+            <h1>Miért mi?</h1>
             <!-- <img src="vines.webp" alt="" class="vine1">
             <img src="vines.webp" alt="" class="vine2"> -->
             <div class="desc-grid">
@@ -52,39 +96,43 @@
         </div>
 
 
-        <div class="recommends">
+        <div class="recommends" id="recommends">
             <div>
                 <h2>Ajánlataink</h2>
             </div>
             <div class="content">
                 <div class="content-card1">
-                    <h3>Vérleveű Juhar</h3>
-                    <img src="kepek\verlevelujuhar.png" alt="">
+                    <h3>Vérlevelű juhar</h3>
+                    <img src="kepek/verlevelujuhar.png" alt="">
                     <p>Mélybordó, egész nyáron át díszítő lombjával azonnal a kerted leglátványosabb fókuszpontjává válik. Rendkívül ellenálló és könnyen nevelhető díszfa, amely elegáns megjelenésével bármilyen udvarba prémium hangulatot varázsol.</p>
                 </div>
                 <div class="content-card2">
                     <h3>Vérszilva</h3>
-                    <img src="kepek\verszilva.png" alt="">
+                    <img src="kepek/verszilva.png" alt="">
                     <p>Mélybordó, egész nyáron át díszítő lombjával azonnal a kerted leglátványosabb fókuszpontjává válik. Rendkívül ellenálló és könnyen nevelhető díszfa, amely elegáns megjelenésével bármilyen udvarba prémium hangulatot varázsol.</p>
                 </div>
                 <div class="content-card3">
                     <h3>Kajszibarack</h3>
-                    <img src="kepek\kajszibarack.png" alt="">
+                    <img src="kepek/kajszibarack.png" alt="">
                     <p>Élvezd a saját kertedből szüretelt, napérlelte és mézédes gyümölcsök utánozhatatlan ízét minden nyáron. Bőtermő, megbízható fajta, amelyből a legfinomabb házi lekvárok és sütemények készülhetnek.</p>
                 </div>
             </div>
         </div>
-        <!-- <div class="delivery">
-            <h1>Miért mink?</h1>
+<div class="delivery" id="delivery">
+    <h1>Egyedül nem megy? Mi segítünk!</h1>
+
+    <div class="delivery-content">
+        <div class="delivery-text">
+            <h3>Faszállítás</h3>
+            <h4>Könnyen</h4>
+            <h4>Gyorsan</h4>
         </div>
 
-        <div class="delivry-box">
-            <h2>Faszálytás</h2>
-            <h2>Könnyen</h2>
-            <h2>Gyorsan</h2>
-            <img src="fazsalitó.png" alt="">
-        </div> -->
+        <div class="delivery-img-box">
+            <img src="fazsalitó.png" alt="Faszállító teherautó">
+        </div>
     </div>
+</div>
 </body>
 
 </html>
